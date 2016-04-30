@@ -418,8 +418,6 @@ deb-src $repo/ $distro-updates main restricted universe multiverse
 deb $repo/ $distro-security main restricted universe multiverse
 deb-src $repo/ $distro-security main restricted universe multiverse
 deb $repo/ $distro-backports main restricted universe multiverse
-deb http://deb.odroid.in/c1/ trusty main
-deb http://deb.odroid.in/ trusty main
 deb-src $repo/ $distro-backports main restricted universe multiverse
 deb $repo/ $distro-proposed main restricted universe multiverse
 deb-src $repo/ $distro-proposed main restricted universe multiverse
@@ -434,11 +432,13 @@ deb-src $repo/ $distro-updates main contrib non-free
 
 deb $repo/ $distro-backports main contrib non-free
 deb-src $repo/ $distro-backports main contrib non-free
-deb http://deb.odroid.in/c1/ trusty main
-deb http://deb.odroid.in/ trusty main
 _EOF_
 ;;esac
 
+cat > $odir/odroid.list << _EOF_
+deb http://deb.odroid.in/c1/ trusty main
+deb http://deb.odroid.in/ trusty main
+_EOF_
 
 # ==============================================
 # Make necessary directories and copy some files

@@ -222,6 +222,7 @@ sleep 1
 _apt="-y -q"
 
 mv /sources.list /etc/apt/sources.list
+mv /odroid.list /etc/apt/sources.list.d/odroid.list
 echo "LANG=\"$LANG\"" > /etc/default/locale
 echo "LC_ALL=\"$LANG\"" >> /etc/default/locale
 
