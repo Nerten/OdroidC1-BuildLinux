@@ -89,7 +89,9 @@ linuxsize=800
 #distro="precise"
 #distro="trusty"
 #distro="utopic"
-distro="vivid"
+#distro="vivid"
+#distro="wily"
+distro="xenial"
 repo="http://ports.ubuntu.com/ubuntu-ports"
 
 # === Debian ===
