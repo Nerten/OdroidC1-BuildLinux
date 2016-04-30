@@ -416,9 +416,11 @@ deb-src $repo/ $distro main restricted universe multiverse
 deb $repo/ $distro-updates main restricted universe multiverse
 deb-src $repo/ $distro-updates main restricted universe multiverse
 deb $repo/ $distro-security main restricted universe multiverse
+deb-src $repo/ $distro-security main restricted universe multiverse
 deb $repo/ $distro-backports main restricted universe multiverse
 deb http://deb.odroid.in/c1/ trusty main
 deb http://deb.odroid.in/ trusty main
+deb-src $repo/ $distro-backports main restricted universe multiverse
 _EOF_
 ;;*)
 cat > $odir/sources.list << _EOF_
